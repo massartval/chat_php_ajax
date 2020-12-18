@@ -7,9 +7,10 @@ $white: #FFFFFF;
 
 h1 {
     font-family: "Cinzel Decorative", cursive;
+    text-align: center;
 }
 
-body, input, button {
+body{
     font-family: Ubuntu, sans-serif;
 }
 
@@ -34,20 +35,6 @@ header {
     font-weight: bold;
 }
 
-form {
-    display: flex;
-    margin-top: 1em;
-    justify-content: space-between;
-}
-
-input, button {
-    padding: 0.5em;
-}
-
-input {
-    margin-right: 10px;
-}
-
 #author {
     width: 20%;
 }
@@ -56,6 +43,63 @@ input {
     width: 60%;
 }
 
-button[type="submit"]{
-    width: 20%;
+
+img{
+    height: 40px;
+}
+.user-inputs{
+    button[type="submit"]{
+        width: 20%;
+    }
+    button{
+        background: rgb(194, 18, 18);
+        border: rgb(194, 18, 18);
+        border-radius: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 800;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    input, button {
+        padding: 0.5em;
+    }
+    
+    input {
+        margin-right: 10px;
+    }
+    form {
+        display: flex;
+        margin-top: 1em;
+        justify-content: space-between;
+    }
+}
+.bouton{
+    background: rgb(194, 18, 18);
+    border: rgb(194, 18, 18);
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 10px;
+}
+.modal1{
+    .bouton{
+        color: $white;
+        background: $primary;
+        text-transform: uppercase;
+        padding:5px;
+        border-radius: 5px;
+        border: $primary 2px solid;
+        font-weight: 600;
+    }
+    .bouton1{
+        color: $black;
+        background: $white;
+        border-radius: 5px;
+        border: $white 2px solid;
+        font-weight: 500;
+    }
 }

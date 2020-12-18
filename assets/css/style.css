@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative|Ubuntu");
 h1 {
   font-family: "Cinzel Decorative", cursive;
+  text-align: center;
 }
 
-body, input, button {
+body {
   font-family: Ubuntu, sans-serif;
 }
 
@@ -28,7 +29,43 @@ header {
   font-weight: bold;
 }
 
-form {
+#author {
+  width: 20%;
+}
+
+#content {
+  width: 60%;
+}
+
+img {
+  height: 40px;
+}
+
+.user-inputs button[type="submit"] {
+  width: 20%;
+}
+
+.user-inputs button {
+  background: #c21212;
+  border: #c21212;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 800;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.user-inputs input, .user-inputs button {
+  padding: 0.5em;
+}
+
+.user-inputs input {
+  margin-right: 10px;
+}
+
+.user-inputs form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,22 +75,33 @@ form {
           justify-content: space-between;
 }
 
-input, button {
-  padding: 0.5em;
+.bouton {
+  background: #c21212;
+  border: #c21212;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px;
 }
 
-input {
-  margin-right: 10px;
+.modal1 .bouton {
+  color: #FFFFFF;
+  background: #594398;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 5px;
+  border: #594398 2px solid;
+  font-weight: 600;
 }
 
-#author {
-  width: 20%;
-}
-
-#content {
-  width: 60%;
-}
-
-button[type="submit"] {
-  width: 20%;
+.modal1 .bouton1 {
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: #FFFFFF 2px solid;
+  font-weight: 500;
 }
